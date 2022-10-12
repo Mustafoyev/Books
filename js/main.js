@@ -29,7 +29,7 @@ function renderFunc(array, add) {
 		newPages.textContent = `Pages: ${item.pages}`;
 		newYear.textContent = `Publication date: ${item.year}`;
 		newLink.href = item.link;
-		newLink.text = 'read more';
+		newLink.text = 'learn more';
 
 		newImg.setAttribute('alt', 'Book image');
 		newImg.setAttribute('width', '300');
