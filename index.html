@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:ital,wght@0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Books</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="container">
+					<h1 class="title">BOOKS</h1>
+					<div class="selects">
+						<select class="select1">
+							<option value="" disabled selected>Sort by name</option>
+							<option value="Aa-Zz">Aa-Zz</option>
+							<option value="Zz-Aa">Zz-Aa</option>
+						</select>
+						<select class="select2">
+							<option value="" disabled selected>Sort by year</option>
+							<option value="max">To max</option>
+							<option value="min">To min</option>
+						</select>
+						<select class="select3">
+							<option value="" disabled selected>Sort by page</option>
+							<option value="max">To max</option>
+							<option value="min">To min</option>
+						</select>
+						<select class="select4">
+							<option value="" disabled selected>Sort by languange</option>
+							<option value="Aa-Zz">Aa-Zz</option>
+							<option value="Zz-Aa">Zz-Aa</option>
+						</select>
+						<div class="search-wrapper">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M2.16667 7.16667C2.16667 4.40917 4.40917 2.16667 7.16667 2.16667C9.92417 2.16667 12.1667 4.40917 12.1667 7.16667C12.1667 9.92417 9.92417 12.1667 7.16667 12.1667C4.40917 12.1667 2.16667 9.92417 2.16667 7.16667ZM15.2558 14.0775L12.4267 11.2475C13.3042 10.1192 13.8333 8.705 13.8333 7.16667C13.8333 3.49083 10.8425 0.5 7.16667 0.5C3.49083 0.5 0.5 3.49083 0.5 7.16667C0.5 10.8425 3.49083 13.8333 7.16667 13.8333C8.705 13.8333 10.1192 13.3042 11.2475 12.4267L14.0775 15.2558C14.24 15.4183 14.4533 15.5 14.6667 15.5C14.88 15.5 15.0933 15.4183 15.2558 15.2558C15.5817 14.93 15.5817 14.4033 15.2558 14.0775Z"
+									fill="#8D8D8D"
+								/>
+							</svg>
+
+							<input
+								class="js-search"
+								type="search"
+								aria-label="search your book"
+								placeholder="search your book"
+							/>
+						</div>
+						<button class="js-mode">Dark / Light</button>
+					</div>
+					<ul class="js-list"></ul>
+				</div>
+			</section>
+		</main>
+		<script src="./js/books.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
