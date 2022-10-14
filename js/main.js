@@ -6,6 +6,7 @@ let elSelect4 = document.querySelector('.select4');
 let elInp = document.querySelector('.js-search');
 let elBtn = document.querySelector('.js-mode');
 let elList = document.querySelector('.js-list');
+let addFragment = document.createDocumentFragment();
 
 let newLanguage = new Set();
 
@@ -44,9 +45,9 @@ function renderFunc(array, add) {
 		newItem.appendChild(newPages);
 		newItem.appendChild(newYear);
 		newItem.appendChild(newLink);
-
-		add.appendChild(newItem);
+		addFragment.appendChild(newItem);
 	});
+	add.appendChild(addFragment);
 }
 
 renderFunc(books, elList);
